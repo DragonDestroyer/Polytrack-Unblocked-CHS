@@ -1,0 +1,8 @@
+-qir20%e3C2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%c1%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://beta-polytrack.kodub.com/ -O1 "C:\My Web Sites\polytrack-unblocked2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.json +*.html +*.js +*.wasm +*.data +*.svg +*.track +*.ogg +*.glb +*.woff +*.woff2 +*.mp3
+File generated automatically on Wed, 05 Nov 2025 13:13:25, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
