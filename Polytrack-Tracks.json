@@ -1,0 +1,324 @@
+{
+  "uuid": "b7a7d5ee-54ff-43b3-8ede-ae773683b05b",
+  "lastMigration": 33,
+  "name": "Polytrack Tracks",
+  "endpointPrefix": "beta-polytrack.kodub.com/",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "f859fc31-f65b-4fca-b27c-cf8f7a8d96c0",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tracks/community/:filename",
+      "responses": [
+        {
+          "uuid": "a13c03cc-2593-4e9b-827d-dc60f70ecb3e",
+          "body": "testing tracks 1,2,3",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "content-type",
+              "value": "application/octet-stream"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "C:\\My Web Sites\\polytrack-unblocked2\\beta-polytrack.kodub.com\\tracks\\community\\{{ urlParam 'filename' }}.txt",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "4575210a-300f-4b7f-b3e8-44ca4392d455",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user",
+      "responses": [
+        {
+          "uuid": "1273a4d4-42ff-4498-91f8-4113200c2091",
+          "body": "{\n  \"success\": true,\n  \"user\": {\n    \"name\": \"Guest\",\n    \"tracks\": []\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "6cf39243-1fee-4e5b-aca4-5e569687aaa9",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tracks/official/:filename",
+      "responses": [
+        {
+          "uuid": "74c17e74-eac9-4e37-8159-ce9b38201b8a",
+          "body": "testing tracks 1,2,3",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "content-type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "C:\\My Web Sites\\polytrack-unblocked2\\beta-polytrack.kodub.com\\tracks\\official\\{{ urlParam 'filename' }}.txt",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "ff0f9ed2-b45b-4238-8c2d-6e6b6ce4e783",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "leaderboard",
+      "responses": [
+        {
+          "uuid": "2e150cba-fcef-4c89-8e58-493cd9a9d980",
+          "body": "{\"success\": true}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "C:\\My Web Sites\\polytrack-unblocked2\\beta-polytrack.kodub.com\\leaderboard\\",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": [
+            {
+              "uuid": "1d566ca2-d743-4521-9cae-8f532282848d",
+              "latency": 0
+            }
+          ]
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "cfe0fdce-9e22-4853-805a-7fcbae4641f2",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "leaderboard",
+      "responses": [
+        {
+          "uuid": "5d3fa28b-e3fa-4bcf-a784-bbdfe8c3d104",
+          "body": "{\n    \"total\": 138,\n    \"entries\": [\n        {\n            \"id\": 543413,\n            \"userId\": \"abb02d62654dcd1512e363651f806447d4987e1d05af33b4938f7de71b123c36\",\n            \"name\": \"bawwlz\",\n            \"carColors\": \"000000000000000000000000\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 3393362,\n            \"userId\": \"23651f3840ca3068847a5d7979dbbc987f5e44ab4d26282aa6bfb59795d30f7d\",\n            \"name\": \"Anonymous\",\n            \"carColors\": \"f00000431c400030ff167f00\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 4319896,\n            \"userId\": \"a7b30cf2538fb8fb04251f7d4bcc6aa32dfc5e1b43a472260c49d19179f8ba0b\",\n            \"name\": \"Anonymous\",\n            \"carColors\": \"ff0000e04b4bff0000c74242\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 5348260,\n            \"userId\": \"78751073417b900efe85faa312bb4cb8e40552c1d6ee9b95b606c5add4d4dcaa\",\n            \"name\": \"Anonymous\",\n            \"carColors\": \"000000000000000000000000\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 6064065,\n            \"userId\": \"3cedef98a18ad5237acb22f981efa393fa6208cc77867521d4ae0a733130cd1f\",\n            \"name\": \"Fenerbahçe\",\n            \"carColors\": \"ccff00ff0000d7ff00ff0000\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 6101862,\n            \"userId\": \"62c83939bf380456f004c7153b3834a6795e3a9902c7ceadcfc3efb77768d550\",\n            \"name\": \"Türkiye\",\n            \"carColors\": \"ffffffff0000ff0000ffffff\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 6662533,\n            \"userId\": \"71ac0e35c788bfe604ce96b4fcf6420930fa9a75db2aa57895ad08c12c8a9276\",\n            \"name\": \"Max Verstappen\",\n            \"carColors\": \"000000000fffff0000ffffff\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 6973054,\n            \"userId\": \"183bdaafdca9967d2b8e4789c6d6387f3ecbc4ab6e90ea8e7fcc08cd30ef0eaf\",\n            \"name\": \"Squirrelll\",\n            \"carColors\": \"137f7830ff00ffffff000000\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 7327286,\n            \"userId\": \"bb8d75e5658b607dddbcae4c36c0b554fc6a5dcc40e4f61b8bb3489a2fede0e1\",\n            \"name\": \"Anonymous\",\n            \"carColors\": \"018098ffffff131313666666\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 7434794,\n            \"userId\": \"b0463b522b9c6dbcb993394c32da52b71fe2d9394fa51fa63befb4fa80133597\",\n            \"name\": \"Anonymous\",\n            \"carColors\": \"d60ed0260a0a160505070101\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 8301309,\n            \"userId\": \"24fc6a983b454a721170cf36115f14ac879ca9e04d4cf3953f8d3bbb9a7ee1b1\",\n            \"name\": \"Fernando\",\n            \"carColors\": \"1c62d092fff387b0838fffec\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 9142834,\n            \"userId\": \"492750813d34825b31ec9905becb75a0f9a2988a4c15a5157b7edca88af99622\",\n            \"name\": \"Adex\",\n            \"carColors\": \"513059ffffff131313666666\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 9827259,\n            \"userId\": \"4c604578d34a44adbbb57161d7822a704e551bc5c728a97f8348f65fb49cde6c\",\n            \"name\": \"BANANZA\",\n            \"carColors\": \"26ff0045ff00daff00f0f604\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 9840173,\n            \"userId\": \"111d989e8fa41cf50032d051bb26f4ca17166105d524a2541c140641f883bbd7\",\n            \"name\": \"Monkey\",\n            \"carColors\": \"000000ffffffffffff000000\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 10201178,\n            \"userId\": \"0cb66bac5fcbef36abdfb1880ab631b941cbbbfa3e7b2d608f46825f01557a4f\",\n            \"name\": \"imagineglazinglebronjames\",\n            \"carColors\": \"29def985329d1d4ee7a152c3\",\n            \"frames\": 1292,\n            \"verifiedState\": 0\n        },\n        {\n            \"id\": 10484596,\n            \"userId\": \"e896da2cab35fa2046cb9c6c76b34ca387b5da7ead0c443cb79e9f003ed7f4f8\",\n            \"name\": \"Master A90110\",\n            \"carColors\": \"937d05a324105016033e3209\",\n            \"frames\":",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4575210a-300f-4b7f-b3e8-44ca4392d455"
+    },
+    {
+      "type": "route",
+      "uuid": "6cf39243-1fee-4e5b-aca4-5e569687aaa9"
+    },
+    {
+      "type": "route",
+      "uuid": "f859fc31-f65b-4fca-b27c-cf8f7a8d96c0"
+    },
+    {
+      "type": "route",
+      "uuid": "cfe0fdce-9e22-4853-805a-7fcbae4641f2"
+    },
+    {
+      "type": "route",
+      "uuid": "ff0f9ed2-b45b-4238-8c2d-6e6b6ce4e783"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/octet-stream"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": [
+    {
+      "uuid": "1d566ca2-d743-4521-9cae-8f532282848d",
+      "id": "5rbh",
+      "uri": "http://localhost:4000/save-record",
+      "name": "Callback",
+      "documentation": "",
+      "method": "post",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "bodyType": "INLINE",
+      "body": "{{body}}",
+      "databucketID": "",
+      "filePath": "",
+      "sendFileAsBody": true
+    }
+  ]
+}
