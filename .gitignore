@@ -1,0 +1,8 @@
+node_modules
+records.txt
+save-record.js
+*.pem  # certs
+hts-log
+hts-cache/
+fade.gif
+backblue.gif
