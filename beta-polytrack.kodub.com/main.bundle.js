@@ -29765,9 +29765,9 @@
                 return "m" === n ? i : "a" === n ? i.call(e) : i ? i.value : t.get(e)
             };
         jD = new WeakMap, QD = new WeakMap, KD = new WeakMap, qD = new WeakMap, YD = new WeakMap, GD = new WeakSet, XD = function(e, t) {
-            return nN(this, GD, "m", JD).call(this, "tracks/official/" + e, t)
+            return nN(this, GD, "m", JD).call(this, "https://pub-1073352ef56346ad878846924270fea3.r2.dev/tracks/official/" + e, t)
         }, ZD = function(e, t) {
-            return nN(this, GD, "m", JD).call(this, "tracks/community/" + e, t)
+            return nN(this, GD, "m", JD).call(this, "https://pub-1073352ef56346ad878846924270fea3.r2.dev/tracks/community/" + e, t)
         }, JD = function(e, t) {
             return t.addResource(), new Promise((n => {
                 const i = new XMLHttpRequest;
