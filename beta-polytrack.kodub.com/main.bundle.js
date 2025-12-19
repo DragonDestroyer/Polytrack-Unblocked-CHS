@@ -17490,7 +17490,7 @@
         }
         const sd = JSON.parse('{"rE":"0.5.1","l$":{"r":2,"M":4}}'),
             od = "kodub",
-            ld = "http://localhost:3000/",
+            ld = "https://pub-1073352ef56346ad878846924270fea3.r2.dev/",
             cd = sd.l$.r;
         if (!Number.isSafeInteger(cd) || cd < 1) throw new Error("package.json beta version property must be a positive integer");
         let hd = "";
@@ -29765,9 +29765,9 @@
                 return "m" === n ? i : "a" === n ? i.call(e) : i ? i.value : t.get(e)
             };
         jD = new WeakMap, QD = new WeakMap, KD = new WeakMap, qD = new WeakMap, YD = new WeakMap, GD = new WeakSet, XD = function(e, t) {
-            return nN(this, GD, "m", JD).call(this, "http://localhost:3000/beta-polytrack.kodub.com/tracks/official/" + e, t)
+            return nN(this, GD, "m", JD).call(this, "beta-polytrack.kodub.com/tracks/official/" + e, t)
         }, ZD = function(e, t) {
-            return nN(this, GD, "m", JD).call(this, "http://localhost:3000/beta-polytrack.kodub.com/tracks/community/" + e, t)
+            return nN(this, GD, "m", JD).call(this, "beta-polytrack.kodub.com/tracks/community/" + e, t)
         }, JD = function(e, t) {
             return t.addResource(), new Promise((n => {
                 const i = new XMLHttpRequest;
